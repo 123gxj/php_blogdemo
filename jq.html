@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<ul id="news">
+		暂无内容
+	</ul>
+	价格：<input type="text" name="v1" id="v1"><br>
+	颜色：<input type="text" name="v2" id="v2"><br>
+	<input type="button" name="" onclick="getData()" value="获取数据1" > 
+
+	<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+	<script type="text/javascript">
+		function getData() {
+			var price = $('#v1').val();
+			var color = $('#v2').val();
+			var data = {
+				price: price,
+				color: color
+			}
+			$.ajax({
+				type: 'post',
+				url: 'http://h1902.teach.com/2019-7-27-php08/teachNote/api/index.php?action=new',
+				// data: 'username=admin&id=1',
+				data: data,
+				dataType: 'json',
+				success: function(data) {					
+					console.log(data)
+				}
+			})
+		}
+
+	</script>
+
+</body>
+</html>

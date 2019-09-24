@@ -1,0 +1,50 @@
+数据库名 bblog
+数据表
+
+网站设置表 pre_setting 
+
+setting_id
+网站域名 website http://www.yangqq.com
+网站标题 title 首页_杨青个人博客 - 一个站在web前端设计之路的女技术员个人博客网站
+博主 blogger
+网站关键字 keywords 个人博客,杨青个人博客,个人博客模板,杨青
+网站描述 description 杨青个人博客，是一个站在web前端设计之路的女程序员个人网站，提供个人博客模板免费资源下载的个人原创网站。
+版权信息 copyright 杨青个人博客
+备案号 ：record 蜀ICP备11002373号-1
+
+单页 pre_single_page
+
+single_id 1 2
+content 1 2
+
+文章列表 pre_article
+
+文章id art_id
+标题 title
+描述 desc
+作者 author
+发布时间 addtime
+阅读量 reading
+内容 content
+点赞 like
+推荐 recommend
+文章分类 cate_id
+
+文章分类 pre_cate
+
+cate_id
+分类名称 cate_name
+
+友情链接 pre_friend_link
+
+link_id
+链接名称 link_name
+链接地址 link_url
+
+
+
+
+
+
+
+
